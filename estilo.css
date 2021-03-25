@@ -1,0 +1,33 @@
+#contenedor{
+    margin: auto;
+    margin-top: 100px;
+    width: 450px;
+    height: 350px;
+    display:block;
+    flex-direction: column;
+    background: rgb(179, 179, 179);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cargaPedidos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span{
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}

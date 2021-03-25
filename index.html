@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="utf-8">
+</head>
+
+<body onLoad="myOnLoad()" id="body">
+    <div id="contenedor">
+        <form action="" id="form">
+            <span>Nombre y apellido</span>
+            <input type="text"><br>
+            <span>Dirección</span>
+            <input type="text"><br>
+            <span>Telefono</span>
+            <input type="phone"><br>
+            <span>Día</span>
+            <select name="Día" id="Día">
+                <option value="">-</option>
+                <option value="">Lunes</option>
+                <option value="">Martes</option>
+                <option value="">Miercoles</option>
+                <option value="">Jueves</option>
+                <option value="">Viernes</option>
+                <option value="">Sabado</option>
+                <option value="">Domingo</option>
+                <option value="">Cualquier día</option>
+            </select><br><br>
+            <div id="cargaPedidos">
+                <span>Gustos</span>
+                <select name="gustos" id="gustos">
+                    <option>Seleccione un gusto</option>
+                </select>
+                <span>¿Cuantas docenas?</span>
+                <select name="cantidad" id="cantidad">
+                    <option value="" id="cantidad">-</option>
+                </select>
+            </div>
+        </form><br><br>
+        <div id="botones">
+            <button onclick="agregar_gusto()">agregar pedido</button>
+            <button onclick="terminar_pedido()">Terminar pedido</button>
+            <button onclick="eliminar_gusto()">Eliminar pedido</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
